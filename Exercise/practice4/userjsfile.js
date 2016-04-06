@@ -26,7 +26,7 @@ app.get('/create', function(req, res){
 				connection.query('select * from	users', function(err, results){
 					if (err) throw err;
 					console.log(results[0].uname)
-
+					console.log(results[0].lname)
 				});
 			});
 		// });
